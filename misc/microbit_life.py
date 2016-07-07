@@ -20,7 +20,6 @@ def game_of_life():
 #		"4,0":0, "4,1":0,"4,2":0, "4,3": 0, "4,4": 0,
 #		}
 	for generation in range(genrange):
-		print "Generation %d" % generation
 		for row in range(cellcount[0]):
 			for col in range(cellcount[1]):
 				mystate = state["%d,%d" % (row,col)]
