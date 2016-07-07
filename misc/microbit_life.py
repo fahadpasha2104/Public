@@ -24,9 +24,9 @@ def game_of_life():
 			for col in range(cellcount[1]):
 				mystate = state["%d,%d" % (row,col)]
 				if mystate == 1:
-					microbit.display.set_pixel(row,col,9)
+					microbit.display.set_pixel(col,row,9)
 				else:
-					microbit.display.set_pixel(row,col,0)
+					microbit.display.set_pixel(col,row,0)
 					
 		for row in range(cellcount[0]):
 			for col in range(cellcount[1]):
